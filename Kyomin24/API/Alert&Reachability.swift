@@ -14,6 +14,7 @@ public class Reachability {
                 SCNetworkReachabilityCreateWithAddress(nil, zeroSockAddress)
             }
         }
+
         var flags = SCNetworkReachabilityFlags()
         if !SCNetworkReachabilityGetFlags(defaultRouteReachability!, &flags) {
             return false

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ProximaNova-Bold.otf">
+            <string>ProximaNova-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="NoDataScreen" customModule="Mzadi" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hVi-6t-V6X">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address not added,Please add new address" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8yk-cQ-sgz">
+                            <rect key="frame" x="30" y="415.5" width="354" height="47"/>
+                            <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="20"/>
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="404-error" translatesAutoresizingMaskIntoConstraints="NO" id="uNZ-in-yWl">
+                            <rect key="frame" x="50" y="245.5" width="314" height="150"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="150" id="hNk-ew-zcF"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="uNZ-in-yWl" firstAttribute="leading" secondItem="hVi-6t-V6X" secondAttribute="leading" constant="50" id="7ng-Y4-wL9"/>
+                        <constraint firstAttribute="trailing" secondItem="8yk-cQ-sgz" secondAttribute="trailing" constant="30" id="TlH-wF-xoV"/>
+                        <constraint firstItem="8yk-cQ-sgz" firstAttribute="leading" secondItem="hVi-6t-V6X" secondAttribute="leading" constant="30" id="eVw-71-8Zx"/>
+                        <constraint firstItem="8yk-cQ-sgz" firstAttribute="top" secondItem="uNZ-in-yWl" secondAttribute="bottom" constant="20" id="gFW-yt-LHL"/>
+                        <constraint firstItem="8yk-cQ-sgz" firstAttribute="centerX" secondItem="hVi-6t-V6X" secondAttribute="centerX" id="trz-Zl-lzp"/>
+                        <constraint firstItem="8yk-cQ-sgz" firstAttribute="centerY" secondItem="hVi-6t-V6X" secondAttribute="centerY" constant="30" id="u1h-2C-ApC"/>
+                        <constraint firstAttribute="trailing" secondItem="uNZ-in-yWl" secondAttribute="trailing" constant="50" id="u9i-4J-DUc"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="hVi-6t-V6X" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="SE2-xF-jsr"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="hVi-6t-V6X" secondAttribute="trailing" id="ZH8-DB-6cI"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="hVi-6t-V6X" secondAttribute="bottom" id="jAK-Kk-kv5"/>
+                <constraint firstItem="hVi-6t-V6X" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="zgC-Z1-MHl"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="lblMsg" destination="8yk-cQ-sgz" id="CgU-Zh-eXn"/>
+            </connections>
+            <point key="canvasLocation" x="69.565217391304358" y="37.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="404-error" width="256" height="256"/>
+    </resources>
+</document>

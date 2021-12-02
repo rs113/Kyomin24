@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "You have no Ads. Start posting new Ads..png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "You have no Ads. Start posting new Ads.@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "You have no Ads. Start posting new Ads.@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

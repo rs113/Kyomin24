@@ -1,0 +1,325 @@
+// Authentication text
+"Select Language"= "Select Language";
+"Continue" = "Continue";
+"Select Theme"  = "Select Theme";
+"Light Theme"="Light Theme";
+"Dark Theme"="Dark Theme";
+"Hi, Welcome To Mzadi"="Hi, Welcome To Mzadi";
+"A 4 digit OTP will be sent via SMS to login your mobile number!"="A 4 digit OTP will be sent via SMS to login your mobile number!";
+"New User?"="New User?";
+"Sign Up"="Sign Up";
+"Skip"="Skip";
+"Name/Website"="Name/Website";
+"Enter Here"="Enter Here";
+"Mobile Number"="Mobile Number";
+"Select Account Type"="Select Account Type";
+"Company"="Company";
+"Personal"="Personal";
+"Already have an account?"="Already have an account?";
+"Login"="Login";
+"Enter Code Sent To Your Phone"="Enter Code Sent
+To Your Phone";
+"We have send a 4 digit OTP to this no."="We have send a 4 digit OTP to this no.";
+"Done"="Done";
+"Didn't receive OTP code?"="Didn't receive OTP code?";
+"Resend OTP"="Resend OTP";
+
+// Authentication alet text
+"Please enter mobile number"="Please enter mobile number";
+"Error!"="Error!";
+"Mobile number should have max 10 digits"="Mobile number should have max 10 digits";
+"Please enter name/website"="Please enter name/website";
+"Please select type"="Please select type";
+"Please Enter OTP"="Please Enter OTP";
+
+
+
+// Home text
+"Home"="Home";
+"My Account"="My Account";
+"New Ad"="New Ad";
+"Chat"="Chat";
+"More"="More";
+"Total Ads"="Total Ads";
+"Notification"="Notification";
+"Search"="Search";
+"Search here"="Search here";
+"Messages"="Messages";
+
+
+
+
+// Home alert text
+"Pull to refresh"="Pull to refresh";
+"Please login first"="Please login first";
+"CONFIRM"="CONFIRM";
+"Info!"="Info!";
+"Please enter search text"="Please enter search text";
+
+
+//Edit profile text
+"Edit Profile"="Edit Profile";
+"I am"="I am";
+"Mobile no"="Mobile no";
+"Your name"="Your name";
+"Email"="Email";
+"Subject"="Subject";
+"Enter email"="Enter email";
+"Address"="Address";
+"Enter address"="Enter address";
+"Something about you"="Something about you";
+"Please enter name"="Please enter name";
+"Enter name"="Enter name";
+"Save"="Save";
+"Success"="Success";
+
+
+
+
+// SideMenu text
+"Guest Mode"="Guest Mode";
+"Add advertise"="Add advertise";
+"My ads"="My ads";
+"Favorites"="Favorites";
+"Following/Followers"="Following/Followers";
+"Purchase Plan"="Purchase Plan";
+"My Plan"="My Plan";
+"Blocked Users"="Blocked Users";
+"Chat"="Chat";
+"Support chat & help center"="Support chat & help center";
+"Language"="Language";
+"Change Mode"="Change Mode";
+"Notification"="Notification";
+"About Mzadi"="About Mzadi";
+"Contact Us"="Contact Us";
+"Share Mzadi"="Share Mzadi";
+"Privacy Policy"="Privacy Policy";
+"Terms And Conditions"="Terms And Conditions";
+"Terms of use"="Terms of use";
+"Logout"="Logout";
+"Remove"="Remove";
+
+
+
+//Side menu alert text
+"Do you really want to logout?"="Do you really want to logout?";
+"Close"="Close";
+"Confirm"="Confirm";
+"Please enter subject"="Please enter subject";
+"Please enter email"="Please enter email";
+"Please enter description"="Please enter description";
+"Any question ? Please write us"="Any question ? Please write us";
+"No notification found yet"="No notification found yet";
+"you are not following any one."="you are not following any one.";
+"You have not favourite on any post."="You have not favourite on any post.";
+
+
+// Detail controller text
+"Brands"="Brands";
+"Type"="Type";
+"All"="All";
+"Product List"="Product List";
+"Product"="Product";
+"Ad's"="Ad's";
+"This Ad is Available in"="This Ad is Available in";
+"Sory By"="Sory By";
+"Title A to Z"="Title A to Z";
+"Title Z to A"="Title Z to A";
+"Price Low to High"="Price Low to High";
+"Price High to Low"="Price High to Low";
+"English"="English";
+"Arabic"="Arabic";
+"Kurdish"="Kurdish";
+
+
+
+
+
+// Post Create text
+"Select the Ad Type (Step 1)"="Select the Ad Type(Step 1)";
+"Select Any"="Select Any";
+"Free Ad"="Free Ad";
+"VIP Ad"="VIP Ad";
+"Please select one"="Please select one";
+"Ok"="Ok";
+"Please Purchase VIP Plan.to Proceed Further"="Please Purchase VIP Plan.to Proceed Further";
+"PURCHASE"="PURCHASE";
+"Select Language (Step 2)"="Select Language (Step 2)";
+"Please Select in Three Languages"="Please Select in Three Languages";
+"You can choose multiple languages"="You can choose multiple languages";
+"Please Select Language"="Please Select Language";
+"Choose Category (Step 3)"="Choose Category (Step 3)";
+"Please Select Category"="Please Select Category";
+"Please Select One"="Please Select One";
+"Choose Sub Category (Step 4)"="Choose Sub Category (Step 4)";
+"Please Select Sub Category"="Please Select Sub Category";
+"Add More Details (Step 5)"="Add More Details (Step 5)";
+"Add photos and video (Step 6)"="Add photos and video (Step 6)";
+"Add More Photo and Video"="Add More Photo and Video";
+"Upload up to 10 attachments(1 video Allowed)"="Upload up to 10 attachments(1 video Allowed)";
+"Price"="Price";
+"Enter Price"="Enter Price";
+"Details in English"="Details in English";
+"Details in Arabic"="Details in Arabic";
+"Details in Kurdish"="Details in Kurdish";
+"Name"="Name";
+"Description"="Description";
+"Post"="Post";
+"Edit"="Edit";
+"Please upload atleast one image or video"="Please upload atleast one image or video";
+"Please Enter Price"="Please Enter Price";
+"Please Enter Name In English"="Please Enter Name In English";
+"Please Enter Description In English"="Please Enter Description In English";
+"Please Enter Name In Kurdish"="Please Enter Name In Kurdish";
+"Please Enter Description In Kurdish"="Please Enter Description In Kurdish";
+"Please Enter Name In Arabic"="Please Enter Name In Arabic";
+"Please Enter Description In Arabic"="Please Enter Description In Arabic";
+"Please Fill Atleast One Title And Description"="Please Fill Atleast One Title And Description";
+"Select option"="Select option";
+"Image"="Image";
+"Video"="Video";
+"Choose from Camera"="Choose from Camera";
+"Choose from Gallery"="Choose from Gallery";
+"Cancel"="Cancel";
+"Only 10 attachments required in One Ads(1 Video allowed)"="Only 10 attachments required in One Ads(1 Video allowed)";
+"Only One Video required in One 'Ads"="Only One Video required in One 'Ads";
+"OK"="OK";
+"Post Ad Successfully"="Post Ad Successfully";
+"View Ad"="View Ad";
+
+
+// Post detail text
+"Report"="Report";
+"Seller Profile"="Seller Profile";
+"Contact"="Contact";
+"Follow"="Follow";
+"Followers"="Followers";
+"Product Detail"="Product Detail";
+"Filter"="Filter";
+"Location"="Location";
+"Get Direction"="Get Direction";
+"Copy Link"="Copy Link";
+"Copy"="Copy";
+"Share On"="Share On";
+"Report Ad"="Report Ad";
+"Report User"="Report User";
+"Post Comment"="Post Comment";
+"Comments"="Comments";
+"Comment"="Comment";
+"Sms"="Sms";
+"Chat"="Chat";
+"WhatsApp"="WhatsApp";
+"Call"="Call";
+"Report user"="Report user";
+"Choose a Reason"="Choose a Reason";
+"Type here"="Type here";
+"Submit"="Submit";
+"For further assistance please Contact Our Costomer Service Team at:post@mzadi.net"="For further assistance please Contact Our Costomer Service Team at:post@mzadi.net";
+"Write Comment"="Write Comment";
+"Following"="Following";
+"Post"="Post";
+"Profile"="Profile";
+"Mobile"="Mobile";
+"Email Id"="Email Id";
+"Published ads"="Published ads";
+"Post's"="Post's";
+"Post Ad's List"="Post Ad's List";
+
+
+// My Add text
+"My Ads"="My Ads";
+"All Ads"="All Ads";
+"Pending"="Pending";
+"Active"="Active";
+"InActive"="InActive";
+"Rejected"="Rejected";
+"DeActivate"="DeActivate";
+"Repost"="Repost";
+"Mark as sold"="Mark as sold";
+"Pending for approval"="Pending for approval";
+"Post InActivate"="Post InActivate";
+"Post Rejected"="Post Rejected";
+"Post Mark as sold"="Post Mark as sold";
+"The edited post after approval will go live.Do you still want to edit the post"="The edited post after approval will go live.Do you still want to edit the post";
+"Delete"="Delete";
+"Do you want to delete this Ad"="Do you want to delete this Ad";
+"Do you want to sold this Ad"="Do you want to sold this Ad";
+"Do you want to Activate this Ad"="Do you want to Activate this Ad";
+"Do you want to Deactivate this Ad"="Do you want to Deactivate this Ad";
+"Do you want to Repost this Ad"="Do you want to Repost this Ad";
+"You have no Ads.Start posting new Ads."="You have no Ads.Start posting new Ads.";
+"you don’t have any active ads start publishing your ads now."="you don’t have any active ads start publishing your ads now.";
+
+
+
+// Payment text
+"GO VIP"="GO VIP";
+"Expired"="Expired";
+"Purchase"="Purchase";
+"Explore Plan"="Explore Plan";
+"Purchase on"="Purchase on";
+"Expire on"="Expire on";
+"by Credit."="by Credit";
+"Purchase Monthly Plan"="Purchase Monthly Plan";
+"Purchase Yearly Plan"="Purchase Yearly Plan";
+"Plan"="Plan";
+"VIP Plan"="VIP Plan";
+"Most Views to your Ad."="Most Views to your Ad.";
+"Unlimited free Ad post."="Unlimited free Ad post.";
+"One VIP Featured Ad Per Month."="One VIP Featured Ad Per Month.";
+"Three VIP Featured Ad Per Month"="Three VIP Featured Ad Per Month";
+"You have"="You have";
+"VIP post left"="VIP post left";
+
+
+// Mzadi text
+"In"="In";
+"FACEBOOK"="FACEBOOK";
+"TWITTER"="TWITTER";
+"INSTAGRAM"="INSTAGRAM";
+"WHATSAPP"="WHATSAPP";
+"TELEGRAM"="TELEGRAM";
+"SHARE MZADI"="SHARE MZADI";
+"Post Add Rejected"="Post Add Rejected";
+"Reason"="Reason";
+"For further assistance please Contact Our Customer Service Team at : post@mzadi.net"="For further assistance please Contact Our Customer Service Team at : post@mzadi.net";
+"Try Again"="Try Again";
+"Current Location"="Current Location";
+"Back"="Back";
+"Please type here"="Please type here";
+"Please select a reason"="Please select a reason";
+"You have not favourite on any post"="You have not favourite on any post";
+"No Plan Found"="No Plan Found";
+
+//api text
+"You’ve been away from the app for some time. Please refresh the home screen and check your internet connection."="You’ve been away from the app for some time. Please refresh the home screen and check your internet connection.";
+"Unable to complete the request, try again!"="Unable to complete the request, try again!";
+"500:Server Error, try again!"="500:Server Error, try again!";
+"Session expire please login"="Session expire please login";
+"Please Check Internet Connection and try again!"="Please Check Internet Connection and try again!";
+"Something went wrong! Please try again later."="Something went wrong! Please try again later.";
+"An unexpected error has occurred. Please try again"="An unexpected error has occurred. Please try again";
+"Your internet connection seems to be lost."="Your internet connection seems to be lost.";
+
+
+// New String
+"Search data"="Search data";
+"Banner(List)"="Banner(List)";
+"This Category has no posted ads now."="This Category has no posted ads now.";
+"Categories"="Categories";
+"Sub Categories"="Sub Categories";
+"Reset Filter"="Reset Filter";
+"To"="To";
+"From"="From";
+"Online"="Online";
+"0 Followers"="0 Followers";
+"1 Followers"="1 Followers";
+"Unfollow"="Unfollow";
+"Copy To Clipboard"="Copy To Clipboard";
+"Featured"="Featured";
+"Not authorized to access"="Not authorized to access";
+"You can choose multiple Language"="You can choose multiple Language";
+"Choose Sub Category"="Choose Sub Category";
+"Choose Category"="Choose Category";
+"Clear"="Clear";
+ 

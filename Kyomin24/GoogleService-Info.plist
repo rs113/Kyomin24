@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>802022114957-n76c8svrokcs8psikr50qten261vseni.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.802022114957-n76c8svrokcs8psikr50qten261vseni</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>802022114957-rke0kfjfcf5dos12o0kqiu9akikd17t5.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCv1E0nUu88UcCXq_3h1Iv0R_voN5MBpp0</string>
+	<key>GCM_SENDER_ID</key>
+	<string>802022114957</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.mzadiapp.emizen</string>
+	<key>PROJECT_ID</key>
+	<string>mzadi-4eda1</string>
+	<key>STORAGE_BUCKET</key>
+	<string>mzadi-4eda1.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:802022114957:ios:3d63ac874bc1c52fe6c4c4</string>
+</dict>
+</plist>

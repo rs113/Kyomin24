@@ -1,0 +1,6 @@
+framework module Pods_Kyomin24 {
+  umbrella header "Pods-Kyomin24-umbrella.h"
+
+  export *
+  module * { export * }
+}

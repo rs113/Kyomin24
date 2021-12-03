@@ -11199,8 +11199,8 @@ Iraqfhgsfhbfbbbnmbncbnmcbhfshfksbkbcbc</string>
         <image name="flyimg" width="36.333332061767578" height="36.666667938232422"/>
         <image name="food" width="91.666664123535156" height="114"/>
         <image name="forwardarrow" width="7" height="12.333333015441895"/>
-        <image name="heart" width="16" height="15"/>
         <image name="heart" catalog="system" width="128" height="109"/>
+        <image name="heart" width="16" height="15"/>
         <image name="homeFill" width="20.333333969116211" height="20.333333969116211"/>
         <image name="home_unfill" width="21" height="21"/>
         <image name="instagram" width="36.333332061767578" height="36.666667938232422"/>

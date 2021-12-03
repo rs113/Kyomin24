@@ -333,6 +333,9 @@
 		73436CD4274CF46F004FDD8C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 73436CD1274CF46F004FDD8C /* GoogleService-Info.plist */; };
 		73436CD6274CF475004FDD8C /* style.json in Resources */ = {isa = PBXBuildFile; fileRef = 73436CD5274CF475004FDD8C /* style.json */; };
 		7366921C27577E120052F839 /* ProfileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7366921B27577E120052F839 /* ProfileCollectionViewCell.swift */; };
+		73869C982758FE9F002EAB03 /* PostReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73869C972758FE9F002EAB03 /* PostReviewViewController.swift */; };
+		73EF020C2758F9DB00BE5C8D /* ChagnePass_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73EF020B2758F9DB00BE5C8D /* ChagnePass_ViewController.swift */; };
+		73FE1DF727589DB100E20B0C /* ProfileReviews_TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FE1DF627589DB100E20B0C /* ProfileReviews_TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -668,6 +671,9 @@
 		73436CD7274CF796004FDD8C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7366921B27577E120052F839 /* ProfileCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionViewCell.swift; sourceTree = "<group>"; };
 		737742C1274F9EA200F474B9 /* Kyomin24.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Kyomin24.entitlements; sourceTree = "<group>"; };
+		73869C972758FE9F002EAB03 /* PostReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostReviewViewController.swift; sourceTree = "<group>"; };
+		73EF020B2758F9DB00BE5C8D /* ChagnePass_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChagnePass_ViewController.swift; sourceTree = "<group>"; };
+		73FE1DF627589DB100E20B0C /* ProfileReviews_TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileReviews_TableViewCell.swift; sourceTree = "<group>"; };
 		8F5B7BFB52F2DF063FAAC577 /* Pods-Kyomin24.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kyomin24.release.xcconfig"; path = "Target Support Files/Pods-Kyomin24/Pods-Kyomin24.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -699,6 +705,9 @@
 			children = (
 				7321E733275766E100F1137A /* ProfileKy_ViewController.swift */,
 				7366921B27577E120052F839 /* ProfileCollectionViewCell.swift */,
+				73FE1DF627589DB100E20B0C /* ProfileReviews_TableViewCell.swift */,
+				73EF020B2758F9DB00BE5C8D /* ChagnePass_ViewController.swift */,
+				73869C972758FE9F002EAB03 /* PostReviewViewController.swift */,
 			);
 			path = ProfileGroup;
 			sourceTree = "<group>";
@@ -2087,6 +2096,7 @@
 				73436C21274CF353004FDD8C /* BannerCollectionViewCell.swift in Sources */,
 				73436BE6274CF352004FDD8C /* PickContactViewController.swift in Sources */,
 				73436C22274CF353004FDD8C /* MyAccountCollectionReusableView.swift in Sources */,
+				73869C982758FE9F002EAB03 /* PostReviewViewController.swift in Sources */,
 				73436C90274CF353004FDD8C /* PurchasePlanViewController.swift in Sources */,
 				73436C1C274CF353004FDD8C /* HomeHeaderCollectionViewCell.swift in Sources */,
 				73436BC7274CF352004FDD8C /* NetworkManager.swift in Sources */,
@@ -2139,6 +2149,7 @@
 				73436C74274CF353004FDD8C /* ProductDetailModal.swift in Sources */,
 				73436C62274CF353004FDD8C /* HomeViewModel.swift in Sources */,
 				73436C3D274CF353004FDD8C /* ProductDetailTblCell.swift in Sources */,
+				73EF020C2758F9DB00BE5C8D /* ChagnePass_ViewController.swift in Sources */,
 				73436BE2274CF352004FDD8C /* BlockUserModel.swift in Sources */,
 				73436CB8274CF353004FDD8C /* HomeViewController.swift in Sources */,
 				73436CD3274CF46F004FDD8C /* Constants.swift in Sources */,
@@ -2236,6 +2247,7 @@
 				73436C87274CF353004FDD8C /* PostRejectedViewController.swift in Sources */,
 				73436C7F274CF353004FDD8C /* ChatListVC.swift in Sources */,
 				73436BE9274CF352004FDD8C /* AllUserListViewController.swift in Sources */,
+				73FE1DF727589DB100E20B0C /* ProfileReviews_TableViewCell.swift in Sources */,
 				73436C69274CF353004FDD8C /* ComonModal.swift in Sources */,
 				73436C1F274CF353004FDD8C /* CategoryDetailCollectionViewCell.swift in Sources */,
 				73436C54274CF353004FDD8C /* MyProfileItemTblCell.swift in Sources */,

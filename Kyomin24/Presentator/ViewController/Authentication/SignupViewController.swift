@@ -197,28 +197,9 @@ class SignupViewController: UIViewController {
        }
         return
      }
-            //else if MobileTxt.text?.count ?? 0>10{
-//        self.showCustomPopupView(altMsg:"Mobile number should have max 10 digits".localized(), alerttitle: "Error!", alertimg: UIImage(named: "Errorimg") ?? UIImage()) {
-//         self.dismiss(animated: true, completion: nil)
-//        }
-//         return
-//
-//    }
-//     else if txtmobile.text?.count ?? 0<10{
-//    self.showCustomPopupView(altMsg:"Mobile number should have max 10 digits".localized(), alerttitle: "Error!".localized(), alertimg: UIImage(named: "Errorimg") ?? UIImage()) {
-//     self.dismiss(animated: true, completion: nil)
-//    }
-//     return
-////     }
-//     else if typeselect == "" {
-//
-//        self.showCustomPopupView(altMsg:"Please select type".localized(), alerttitle: "Error!".localized(), alertimg: UIImage(named: "Errorimg") ?? UIImage()) {
-//        self.dismiss(animated: true, completion: nil)
-//        }
-//        return
-//    }
-     
+   
      else{
+        
      SignUpApiCall()
     }
         

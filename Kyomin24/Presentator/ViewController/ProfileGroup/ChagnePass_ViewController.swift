@@ -1,39 +1,45 @@
 //
-//  CreatePass_ViewController.swift
+//  ChagnePass_ViewController.swift
 //  Kyomin24
 //
-//  Created by emizen on 11/29/21.
+//  Created by emizen on 12/2/21.
 //
 
 import UIKit
 
-class CreatePass_ViewController: UIViewController {
-    
-    @IBOutlet weak var CofirmPassTxt: UITextField!
-    @IBOutlet weak var newPassTxt: UITextField!
-    var EmailStr = ""
-    
+class ChagnePass_ViewController: UIViewController {
+
+    @IBOutlet weak var ConfirmPassTxt: UITextField!
+    @IBOutlet weak var NewPassTxt: UITextField!
+    @IBOutlet weak var oldPassTxt: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
+
+        // Do any additional setup after loading the view.
     }
     
-    @IBAction func ConfirmBtn(_ sender: Any) {
+    @IBAction func ContinueBtnClicked(_ sender: Any) {
         
-        if newPassTxt.text == "" {
+        if oldPassTxt.text == "" {
+            
+            self.showCustomPopupView(altMsg:"Please enter old password.".localized(), alerttitle: "Error!".localized(), alertimg: UIImage(named: "Errorimg") ?? UIImage()) {
+                self.dismiss(animated: true, completion: nil)
+            }
+            
+        }else if NewPassTxt.text == "" {
             
             self.showCustomPopupView(altMsg:"Please enter new password.".localized(), alerttitle: "Error!".localized(), alertimg: UIImage(named: "Errorimg") ?? UIImage()) {
                 self.dismiss(animated: true, completion: nil)
             }
             
-        }else if CofirmPassTxt.text == "" {
+        }else if ConfirmPassTxt.text == "" {
             
             self.showCustomPopupView(altMsg:"Please enter confirm password.".localized(), alerttitle: "Error!".localized(), alertimg: UIImage(named: "Errorimg") ?? UIImage()) {
                 self.dismiss(animated: true, completion: nil)
             }
             
-        }else if newPassTxt.text != CofirmPassTxt.text  {
+        }
+        else if NewPassTxt.text != ConfirmPassTxt.text  {
             
             self.showCustomPopupView(altMsg:"Password confirmation doesn't match Password".localized(), alerttitle: "Error!".localized(), alertimg: UIImage(named: "Errorimg") ?? UIImage()) {
                 self.dismiss(animated: true, completion: nil)
@@ -41,20 +47,19 @@ class CreatePass_ViewController: UIViewController {
             
         }else {
             
-            NewPassApi()
+            ChangePass()
         }
-        
     }
     
-    func NewPassApi() {
+    
+    func ChangePass() {
         
-        print(EmailStr)
         
         let dictRegParam = [
             
             
-            "email": EmailStr,
-            "new_password":newPassTxt.text ?? ""
+            "email": "",
+            "new_password": ""
             
             
         ]  as [String : Any]
@@ -83,5 +88,4 @@ class CreatePass_ViewController: UIViewController {
             })
         }
     }
-    
 }

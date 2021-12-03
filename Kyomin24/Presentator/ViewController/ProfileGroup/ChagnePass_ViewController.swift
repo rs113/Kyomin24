@@ -12,6 +12,9 @@ class ChagnePass_ViewController: UIViewController {
     @IBOutlet weak var ConfirmPassTxt: UITextField!
     @IBOutlet weak var NewPassTxt: UITextField!
     @IBOutlet weak var oldPassTxt: UITextField!
+    
+    var EmailStrPass = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -51,6 +54,11 @@ class ChagnePass_ViewController: UIViewController {
         }
     }
     
+    @IBAction func backBtnClicked(_ sender: Any) {
+        
+        self.navigationController?.popViewController(animated: true)
+
+    }
     
     func ChangePass() {
         
@@ -58,22 +66,29 @@ class ChagnePass_ViewController: UIViewController {
         let dictRegParam = [
             
             
-            "email": "",
-            "new_password": ""
-            
+            "email": EmailStrPass,
+            "old_password": oldPassTxt.text ?? "",
+            "password":  NewPassTxt.text ?? "",
+            "password_confirmation": ConfirmPassTxt.text ?? ""
+
             
         ]  as [String : Any]
         
         print(dictRegParam)
         
-        ApiManager.apiShared.sendRequestServerPostWithHeader(url: ResetPass, VCType: self, dictParameter: dictRegParam, success: { [self] (ResponseJson) in
+        ApiManager.apiShared.sendRequestServerPostWithHeader(url: changepassword, VCType: self, dictParameter: dictRegParam, success: { [self] (ResponseJson) in
             
             let stCode = ResponseJson["status_code"].int
             let strMessage = ResponseJson["message"].string
             
             if stCode == 200{
                 
-                
+                self.showCustomPopupView(altMsg: strMessage ?? "", alerttitle: "Success".localized(), alertimg: UIImage(named: "") ?? UIImage(), OkAction: {
+                 
+                    self.dismiss(animated: true, completion: nil)
+                    self.navigationController?.popViewController(animated: true)
+
+                })
                 
                 
             }else{

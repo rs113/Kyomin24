@@ -29,11 +29,23 @@ class ProfileKy_ViewController: UIViewController {
         
     }
     
+    @IBOutlet weak var EditProfileBtn: UIButton!
+    @IBOutlet weak var PostReviewBtn: UIButton!
+    
     @IBOutlet weak var AboutImg: UIImageView!
     var AdsArray:[AdsDetail] = []
     var RebviewsArray:[ReviewDetail] = []
+    
     var strPostCount = ""
     var ReviewCountStr = ""
+    var EmailStrSend = ""
+    var PhoneStrSend = ""
+    var CityStrSend = ""
+    var NameStrSend = ""
+    var ProfileImgStr = ""
+    var RegionStrSend = ""
+    var CountryStrSend = ""
+    
     @IBOutlet weak var CountTile: UILabel!
     @IBOutlet weak var MainTitle: UILabel!
     @IBOutlet weak var ReviewView: UIView!
@@ -57,6 +69,7 @@ class ProfileKy_ViewController: UIViewController {
       
         ProfileApiFunc()
         
+        PostReviewBtn.isHidden = true
         ProfileStatusImg.isHidden = true
         ProfileImg.layer.cornerRadius = 5
         
@@ -66,14 +79,34 @@ class ProfileKy_ViewController: UIViewController {
         
         // Do any additional setup after loading the view.
     }
+    
+    @IBAction func EditProfileBtnClicked(_ sender: Any) {
+        
+        //        ProfileCity.text = resdata["address"]?.string
+        //        userName.text = resdata["name"]?.string
+        //        profileTimelbl.text = resdata["time"]?.string
+        //        aboutTxt.text = resdata["description"]?.string
+        //        strPostCount = resdata["product_count"]?.string ?? ""
+        //        ReviewCountStr = resdata["reviews_count"]?.string ?? ""
+        
+        let vc = EditProfileViewController.instance(.myAccountTab) as! EditProfileViewController
+        vc.nameStr = NameStrSend
+        vc.EmailStr = EmailStrSend
+        vc.MobileStr = PhoneStrSend
+        vc.CityStr = CityStrSend
+        vc.userimg = ProfileImgStr
+        vc.RegionStr = RegionStrSend
+        vc.CountryStr = CountryStrSend
+        self.navigationController?.pushViewController(vc, animated: true)
+    
+    }
+    
     @IBAction func postBtnClicked(_ sender: Any) {
         
         let vc = PostReviewViewController.instance(.myAccountTab) as! PostReviewViewController
-        
         self.navigationController?.pushViewController(vc, animated: true)
         
     }
-    
     
     func ProfileApiFunc(){
         
@@ -83,7 +116,7 @@ class ProfileKy_ViewController: UIViewController {
         print(idInt)
         let dictRegParam = [
             
-            "profile_id": 87
+            "profile_id": idInt
             
         ]  as [String : Any]
         
@@ -106,11 +139,18 @@ class ProfileKy_ViewController: UIViewController {
                     userName.text = resdata["name"]?.string
                     profileTimelbl.text = resdata["time"]?.string
                     aboutTxt.text = resdata["description"]?.string
-                     strPostCount = resdata["product_count"]?.string ?? ""
-                     ReviewCountStr = resdata["reviews_count"]?.string ?? ""
-                    
+                    strPostCount = resdata["product_count"]?.string ?? ""
+                    ReviewCountStr = resdata["reviews_count"]?.string ?? ""
+                    EmailStrSend = resdata["email"]?.string ?? ""
+                    PhoneStrSend = resdata["phone_no"]?.string ?? ""
+                    CityStrSend = resdata["city"]?.string ?? ""
+                    NameStrSend = resdata["name"]?.string ?? ""
+                    RegionStrSend = resdata["region"]?.string ?? ""
+                    CountryStrSend = resdata["country"]?.string ?? ""
+
+
                     let verifyStatus = resdata["is_verfied"]?.string
-                    let ProfileImgStr = resdata["profile_iamge"]?.string ?? ""
+                    ProfileImgStr = resdata["profile_image"]?.string ?? ""
                     if ProfileImgStr != "" {
                         
                         let url = URL(string: ProfileImgStr)

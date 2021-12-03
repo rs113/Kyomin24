@@ -96,6 +96,10 @@ let otpsend = "otpsend"
 let OtpVerifyUrl = "otpverification"
 let ResetPass = "updatepassword"
 let ProfileApi = "sellerprofile"
+let PostAreveiw = "postreview"
+let changepassword = "changepassword"
+
+
 
 ////
 

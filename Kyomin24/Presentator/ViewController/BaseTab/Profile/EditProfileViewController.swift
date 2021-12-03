@@ -15,7 +15,7 @@ class EditProfileViewController: UIViewController {
     @IBOutlet weak var scrollview: UIScrollView!
     
     @IBOutlet weak var backview: CornerBGView!
-    @IBOutlet weak var btnback: UIButton!
+ 
     @IBOutlet weak var btnaddress: UIButton!
     @IBOutlet weak var btnsave: UIButton!
     @IBOutlet weak var lblsomethinghint: UILabel!
@@ -24,17 +24,18 @@ class EditProfileViewController: UIViewController {
     @IBOutlet weak var lblnamehint: UILabel!
     @IBOutlet weak var lblmobilehint: UILabel!
     @IBOutlet weak var lbliamhint: UILabel!
-    @IBOutlet weak var Lbleditprofilehint: UILabel!
-    @IBOutlet weak var txtaddress: UITextField!
-    @IBOutlet weak var txtemail: UITextField!
-    
+   
     @IBOutlet weak var txtsomething: UITextView!
-    @IBOutlet weak var txtname: UITextField!
-    @IBOutlet weak var txtmobile: UITextField!
-    @IBOutlet weak var txttype: UITextField!
     
     @IBOutlet weak var profileimg: UIImageView!
     
+    var nameStr = ""
+    var EmailStr = ""
+    var MobileStr = ""
+    var CityStr = ""
+    var SomthingStr = ""
+    var CountryStr = ""
+    var RegionStr = ""
     
     var name=""
     var type=""
@@ -49,20 +50,28 @@ class EditProfileViewController: UIViewController {
     
     var ArrMyProduct:GetProfileModel?
     
-    
-    
+    @IBOutlet weak var nameTxt: UITextField!
+    @IBOutlet weak var EmailTxt: UITextField!
+    @IBOutlet weak var MobileTxt: UITextField!
+    @IBOutlet weak var CityTxt: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         scrollview.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
         if Localize.currentLanguage() == "en" {
-            self.btnback.transform=CGAffineTransform(rotationAngle:0)
+         //   self.btnback.transform=CGAffineTransform(rotationAngle:0)
            
         }else{
-            self.btnback.transform=CGAffineTransform(rotationAngle:-CGFloat.pi)
+          //  self.btnback.transform=CGAffineTransform(rotationAngle:-CGFloat.pi)
         }
         
-        Settext()
+        nameTxt.text = nameStr
+        EmailTxt.text = EmailStr
+        MobileTxt.text = MobileStr
+        CityTxt.text = CityStr
+        txtsomething.text = SomthingStr
+        
+     //   Settext()
 //        if Defaults.getBoolValue(forKey: ConstantApp.IS_DARK_MODE_UNABLE){
 //            backview.borderColor = App_main_dark
 //            backview.borderWidth = 0
@@ -72,13 +81,15 @@ class EditProfileViewController: UIViewController {
 //        }
 //        NotificationCenter.default.addObserver(self, selector: #selector(Changebordercolor), name:NSNotification.Name("color"), object: nil)
         
-        txtmobile.textColor = .black
-        txttype.textColor = .black
-        txttype.text=type
-        txtname.text=name
-        txtmobile.text="+964 \(mobileno)"
-        txtemail.text=email
-        txtaddress.text=address
+//        txtmobile.textColor = .black
+//        txttype.textColor = .black
+//        txttype.text=type
+//        txtname.text=name
+//        txtmobile.text="+964 \(mobileno)"
+//        txtemail.text=email
+//        txtaddress.text=address
+        print(userimg)
+        
         txtsomething.text=about
         self.profileimg.sd_imageIndicator = SDWebImageActivityIndicator.gray
         self.profileimg.contentMode = .scaleAspectFill
@@ -89,20 +100,20 @@ class EditProfileViewController: UIViewController {
     
     
     
-    
-    func Settext(){
-        Lbleditprofilehint.text="Edit Profile".localized()
-        lbliamhint.text="I am".localized()
-        lblmobilehint.text="Mobile no".localized()
-        lblnamehint.text="Your name".localized()
-        txtname.placeholder="Enter name".localized()
-        lblemailhint.text="Email".localized()
-        txtemail.placeholder="Enter email".localized()
-        lbladdresshint.text="Address".localized()
-        txtaddress.placeholder="Enter address".localized()
-        lblsomethinghint.text="Something about you".localized()
-        btnsave.setTitle("Save".localized(), for: .normal)
-    }
+//
+//    func Settext(){
+//        Lbleditprofilehint.text="Edit Profile".localized()
+//        lbliamhint.text="I am".localized()
+//        lblmobilehint.text="Mobile no".localized()
+//        lblnamehint.text="Your name".localized()
+//        txtname.placeholder="Enter name".localized()
+//        lblemailhint.text="Email".localized()
+//        txtemail.placeholder="Enter email".localized()
+//        lbladdresshint.text="Address".localized()
+//        txtaddress.placeholder="Enter address".localized()
+//        lblsomethinghint.text="Something about you".localized()
+//        btnsave.setTitle("Save".localized(), for: .normal)
+//    }
     
     
     func RegisterUseronSocketServer(userimg:String){
@@ -111,8 +122,8 @@ class EditProfileViewController: UIViewController {
                "userId": obj.prefs.value(forKey: APP_USER_ID) as? String ?? "",
                "type": "loginOrCreate",
                "fcm_token":obj.prefs.value(forKey: APP_FCM_TOKEN) ?? "",
-               "userName":txtmobile.text ?? "",
-               "firstName":txtname.text ?? "",
+            "userName":nameTxt.text ?? "",
+               "firstName":nameTxt.text ?? "",
                "password": "12345678",
                "profile_pic":userimg,
                "lastSeen":Date().currentTimeMillis()
@@ -143,6 +154,12 @@ class EditProfileViewController: UIViewController {
 //    
     
     
+    @IBAction func chagneBtnClicked(_ sender: Any) {
+        
+        let vc = ChagnePass_ViewController.instance(.myAccountTab) as! ChagnePass_ViewController
+        vc.EmailStrPass = EmailStr
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
     
    
     
@@ -150,10 +167,10 @@ class EditProfileViewController: UIViewController {
         let vc = AddressViewController.instance(.myAccountTab) as! AddressViewController
         vc.callBack = { (storeloc: String,lat:Double,long:Double) in
             print(storeloc,lat,long)
-            self.txtaddress.text=storeloc
+           // self.txtaddress.text=storeloc
             self.latit="\(lat)"
             self.longit="\(long)"
-            UserDefaults.standard.setValue(self.txtaddress.text, forKey: "storelocation")
+        //    UserDefaults.standard.setValue(self.txtaddress.text, forKey: "storelocation")
             UserDefaults.standard.set(self.latit, forKey: "latitude")
             UserDefaults.standard.set(self.longit, forKey: "longitude")
         }
@@ -219,7 +236,7 @@ class EditProfileViewController: UIViewController {
         //        }
         //            return
         //
-        if (txtname.text?.isStringBlank())! {
+        if (nameTxt.text?.isStringBlank())! {
             
             self.showCustomPopupView(altMsg:"Please enter name".localized(), alerttitle: "Error!".localized(), alertimg: UIImage(named: "Errorimg") ?? UIImage()) {
                 self.dismiss(animated: true, completion: nil)
@@ -269,14 +286,20 @@ class EditProfileViewController: UIViewController {
         if Reachability.isConnectedToNetwork() {
             let param = [
                 
-                "name":txtname.text ?? "",
-                "email":txtemail.text ?? "",
-                "address":txtaddress.text ?? "",
-                "about":txtsomething.text ?? ""
-                
+                "name":nameTxt.text ?? "",
+                "email":EmailTxt.text ?? "",
+                "phone_no":MobileTxt.text ?? "",
+                "city":CityTxt.text ?? "",
+                "description":txtsomething.text ?? "",
+                "country":CountryStr,
+                "regions":RegionStr,
+
                 ]  as [String : Any]
             
-            
+            if profileimg.image != nil {
+                
+                print("s")
+            }
             
             ApiManager.apiShared.postImageAPI(image:profileimg.image ?? UIImage(), imageName:"profile_image", VCType: self, isShowLoader:true, parameter: param, url:UpdateProfileURl, { (json) in
                 debugPrint(json)
